@@ -100,35 +100,128 @@ i {
   color: black;
 }
 li {
-  color: blue;
+  list-style: none;
 }
 /* CSS Thông tin nghề nghiệp*/
 .thongtinnghenghiep {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   margin: 10px;
   padding: 30px 50px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75px 100px 100px;
+  column-width: 300px;
   border-width: 1px;
-  border-color: black;
+  border-color: rgba(128, 128, 128, 0.447);
   border-style: solid;
   padding-right: 10px;
 }
 .item-1 {
   grid-column: 1 / span 2;
   grid-row: 1 / span 1;
+  padding-left: 10px;
 }
 .item-2 {
   grid-column: 3 / span 1;
   grid-row: 1 / span 3;
   font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
 }
 .item-3 {
-  grid-row: 2 / span 1;
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 3;
+}
+
+.thongtinnghenghiep i {
+  color: rgba(107, 107, 112, 0.654);
+  padding-bottom: 0px;
+}
+
+/*SO THICH*/
+.hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px;
+  column-gap: 3px;
+  margin-inline: initial;
+  padding-inline: inherit;
+  text-align: initial;
+}
+
+.hobby i {
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-color: rgba(102, 250, 173, 0.699);
+  border-radius: 50%;
+  font-size: 12px;
+  padding: 8px 6px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*NGON NGU-KY NANG*/
+.skill {
+  padding-left: 10px;
+  box-sizing: ;
+}
+pre {
+  padding-right: 50px;
+}
+.skill span {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+.skill .xam {
+  background: #d5d5d5;
+  display: inline-block;
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+/*CSS Chứng chỉ - giải thưởng*/
+
+.chungchi-giaithuong {
+  background-color: #f3f2f2;
+}
+
+.chungchi-giaithuong h2 {
+  padding: 60px 60px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+.chungchi {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  row-gap: 50px;
+}
+
+.hangmuc img {
+  float: left;
+  width: 120px;
+  height: 100px;
+  margin-right: 10px;
+}
+.hangmuc h5 {
+  margin: 0px;
+}
+
+.hangmuc {
+  border-inline-start: 2px solid #d6c08d;
+  padding-bottom: 10px;
 }

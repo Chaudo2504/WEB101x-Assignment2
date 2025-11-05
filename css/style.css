@@ -1,3 +1,5 @@
+* {
+}
 body {
   margin: 0px;
 }
@@ -106,21 +108,18 @@ li {
 .thongtinnghenghiep {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 10px;
-  padding: 30px 50px;
-  gap: 30px;
+  margin: 20px 50px;
+  gap: 10px;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 75px 100px 100px;
-  column-width: 300px;
-  border-width: 1px;
-  border-color: rgba(128, 128, 128, 0.447);
-  border-style: solid;
-  padding-right: 10px;
+  grid-template-rows: 60px 50px;
+  border: 1px solid rgba(128, 128, 128, 0.447);
+  margin-left: 5px;
+  gap: 2px;
+  width: auto;
 }
 .item-1 {
   grid-column: 1 / span 2;
@@ -137,6 +136,7 @@ li {
 .item-3 {
   grid-column: 1 / span 3;
   grid-row: 2 / span 3;
+  margin-right: 5px;
 }
 
 .thongtinnghenghiep i {
@@ -149,9 +149,8 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 30px;
-  column-gap: 3px;
-  margin-inline: initial;
-  padding-inline: inherit;
+  column-gap: 1px;
+  margin-left: 5px;
   text-align: initial;
 }
 
@@ -169,17 +168,19 @@ li {
 
 /*NGON NGU-KY NANG*/
 .skill {
-  padding-left: 10px;
-  box-sizing: ;
+  display: grid;
+  padding-left: 5px;
+  overflow: auto;
 }
 pre {
   padding-right: 50px;
 }
+
 .skill span {
   background: #199cdb;
   display: inline-block;
   height: 2px;
-  width: 45px;
+  width: 30px;
   margin-right: 10px;
 }
 
@@ -187,7 +188,7 @@ pre {
   background: #d5d5d5;
   display: inline-block;
   height: 2px;
-  width: 45px;
+  width: 30px;
   margin-right: 10px;
 }
 
@@ -195,20 +196,22 @@ pre {
 
 .chungchi-giaithuong {
   background-color: #f3f2f2;
+  padding-right: 60px;
 }
 
 .chungchi-giaithuong h2 {
-  padding: 60px 60px;
+  padding: 30px 35px;
   padding-bottom: 30px;
   margin: 0px;
 }
 .chungchi {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-left: 50px;
-  padding-right: 20px;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 35px;
   padding-bottom: 20px;
-  row-gap: 50px;
+  row-gap: 20px;
+  width: 100%;
 }
 
 .hangmuc img {
@@ -222,6 +225,86 @@ pre {
 }
 
 .hangmuc {
-  border-inline-start: 2px solid #d6c08d;
-  padding-bottom: 10px;
+  border-bottom: 2px solid #d6c08d;
+  padding-bottom: 30px;
+  box-sizing: content-box;
+}
+
+.hangmuc2 {
+  border-left: 2px solid #d6c08d;
+  height: 100px;
+  padding-left: 20px;
+}
+
+.hangmuc3 img {
+  float: left;
+  width: 120px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+/*CSS dự án*/
+.duan h2 {
+  padding: 35px;
+}
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  margin-left: 35px;
+  gap: 10px;
+  height: auto;
+}
+
+.project-content {
+  grid-template-columns: 1fr 1fr 1fr;
+
+  border: 1px solid rgba(128, 128, 128, 0.447);
+  margin-left: 5px;
+  gap: 2px;
+  width: 100%;
+}
+
+.project-content img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-content h5 {
+  margin: 1px;
+  padding: 20px 10px;
+  height: 30px;
+  border-top: #d5d5d5 1px solid;
+}
+
+.time-project {
+  margin: 5px 5px;
+  border-top: 1px solid #d5d5d5;
+  display: flex;
+}
+
+.time-project i {
+  margin-top: 8px;
+}
+.time-project b {
+  background-color: #199cdb;
+  border-radius: 15px;
+  color: white;
+  font-size: 14px;
+  padding: 10px 6px;
+  margin: 5px 5px;
+}
+.content-duan,
+tr {
+  text-align: left;
+  border-top: #d5d5d5 1px solid;
+  border-collapse: collapse;
+}
+
+.content-duan {
+  height: 220px;
+}
+
+.content-duan td {
+  padding-left: 10px;
 }

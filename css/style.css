@@ -245,7 +245,7 @@ pre {
 
 /*CSS dự án*/
 .duan h2 {
-  padding: 35px;
+  padding-left: 35px;
 }
 .project {
   display: grid;
@@ -272,7 +272,7 @@ pre {
 
 .project-content h5 {
   margin: 1px;
-  padding: 20px 10px;
+  padding: 10px 10px;
   height: 30px;
   border-top: #d5d5d5 1px solid;
 }

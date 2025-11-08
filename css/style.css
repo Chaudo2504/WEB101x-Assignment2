@@ -1,7 +1,8 @@
 * {
 }
 body {
-  margin: 0px;
+  width: 825px;
+  margin: 0px auto;
 }
 p {
   font-size: 13px;
@@ -43,8 +44,9 @@ b {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 
 nav a:hover {
@@ -68,13 +70,23 @@ a {
 i {
   color: rgb(85, 132, 240);
 }
+/* CSS nâng cao */
+.avatar {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 10px solid white;
+  top: -70%;
+  left: 42%;
+}
 
 /* Thông tin cá nhân */
 
 .thongtincanhan {
-  margin-top: 10px;
+  width: 100%;
+  margin-top: 30px;
   display: grid;
-  column-gap: 20px;
   grid-template-columns: 50% 50%;
   text-align: left;
   line-height: 1.5;
@@ -88,7 +100,7 @@ i {
 
 .thongtin2 {
   background-color: rgb(224, 224, 224);
-  padding: 30px 20px;
+  padding: 30px 30px;
   font-size: 13px;
 }
 
@@ -108,14 +120,14 @@ li {
 .thongtinnghenghiep {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 20px 50px;
+  margin: 10px 80px;
   gap: 10px;
 }
 
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 60px 50px;
+  grid-template-rows: 50px 50px;
   border: 1px solid rgba(128, 128, 128, 0.447);
   margin-left: 5px;
   gap: 2px;
@@ -149,16 +161,15 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 30px;
-  column-gap: 1px;
-  margin-left: 5px;
-  text-align: initial;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .hobby i {
   width: 30px;
   height: 30px;
   border-style: solid;
-  border-color: rgba(102, 250, 173, 0.699);
+  border-color: rgba(22, 234, 124, 0.699);
   border-radius: 50%;
   font-size: 12px;
   padding: 8px 6px;
@@ -166,29 +177,34 @@ li {
   text-align: center;
 }
 
+.hobby p {
+  font-size: 10px;
+  text-align: left;
+}
 /*NGON NGU-KY NANG*/
 .skill {
   display: grid;
-  padding-left: 5px;
-  overflow: auto;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 pre {
   padding-right: 50px;
 }
 
 .skill span {
-  background: #199cdb;
+  background: #084ded;
   display: inline-block;
-  height: 2px;
-  width: 30px;
+  height: 4px;
+  width: 40px;
   margin-right: 10px;
+  border-radius: 2px;
 }
 
 .skill .xam {
-  background: #d5d5d5;
+  background: #cdcdcd;
   display: inline-block;
-  height: 2px;
-  width: 30px;
+  height: 4px;
+  width: 40px;
   margin-right: 10px;
 }
 
@@ -196,27 +212,24 @@ pre {
 
 .chungchi-giaithuong {
   background-color: #f3f2f2;
-  padding-right: 60px;
+  padding-right: 35px;
 }
 
 .chungchi-giaithuong h2 {
-  padding: 30px 35px;
-  padding-bottom: 30px;
-  margin: 0px;
+  padding: 30px 100px;
 }
 .chungchi {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
-  padding-left: 35px;
+  padding-left: 100px;
   padding-bottom: 20px;
-  row-gap: 20px;
-  width: 100%;
+  row-gap: 10px;
 }
 
 .hangmuc img {
   float: left;
-  width: 120px;
+  width: 150px;
   height: 100px;
   margin-right: 10px;
 }
@@ -226,39 +239,38 @@ pre {
 
 .hangmuc {
   border-bottom: 2px solid #d6c08d;
-  padding-bottom: 30px;
-  box-sizing: content-box;
+  padding-bottom: 20px;
 }
 
 .hangmuc2 {
   border-left: 2px solid #d6c08d;
   height: 100px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
+.hangmuc3 h5 {
+  margin: 0px;
+}
 .hangmuc3 img {
   float: left;
-  width: 120px;
+  width: 150px;
   height: 100px;
   margin-right: 10px;
 }
 
 /*CSS dự án*/
 .duan h2 {
-  padding-left: 35px;
+  padding: 10px 100px;
 }
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
-  margin-left: 35px;
-  gap: 10px;
-  height: auto;
+  margin: 10px 100px;
+  gap: 20px;
 }
 
 .project-content {
   grid-template-columns: 1fr 1fr 1fr;
-
   border: 1px solid rgba(128, 128, 128, 0.447);
   margin-left: 5px;
   gap: 2px;
@@ -278,21 +290,20 @@ pre {
 }
 
 .time-project {
-  margin: 5px 5px;
-  border-top: 1px solid #d5d5d5;
   display: flex;
+  border-top: 1px solid #d5d5d5;
+  align-items: center;
+  margin-left: 5px;
 }
 
-.time-project i {
-  margin-top: 8px;
-}
 .time-project b {
   background-color: #199cdb;
   border-radius: 15px;
   color: white;
   font-size: 14px;
-  padding: 10px 6px;
-  margin: 5px 5px;
+  padding: 5px;
+  align-items: center;
+  margin-right: 10px;
 }
 .content-duan,
 tr {
@@ -303,8 +314,37 @@ tr {
 
 .content-duan {
   height: 220px;
+  text-align: left;
+  margin-top: 0px;
 }
 
 .content-duan td {
   padding-left: 10px;
+  width: 40%;
+}
+
+/*CSS Footer*/
+
+.footer {
+  display: flex;
+  position: relative;
+  background-color: hsl(0, 0%, 95%);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: rgba(86, 84, 84, 0.792);
+  align-content: center;
+  text-decoration: none;
+  font-size: 13px;
+  text-align: center;
+  font-family: serif;
+}
+
+.footer i {
+  font-size: 20px;
+  padding-left: 20px;
 }
